@@ -13,11 +13,16 @@ export default function Education() {
           </p>
 
           <h2 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-            Minha jornada de
+            Minha formação
             <span className="block text-green-500">
-              aprendizado.
+              acadêmica.
             </span>
           </h2>
+
+          <p className="mt-6 text-base leading-7 text-gray-400 sm:text-lg">
+            Formação superior que contribuiu para minha base em
+            desenvolvimento de software, programação e construção de sistemas.
+          </p>
         </div>
 
         {/* Formação */}
@@ -30,21 +35,36 @@ export default function Education() {
 
             <div className="max-w-3xl">
 
-              <span className="text-sm font-medium uppercase tracking-wider text-green-400">
-                Graduação
+              {/* Status */}
+              <span className="inline-flex rounded-full border border-green-700 bg-green-900/30 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-green-400">
+                Formação concluída
               </span>
 
-              <h3 className="mt-3 text-2xl font-bold sm:text-3xl">
+              {/* Curso */}
+              <h3 className="mt-4 text-2xl font-bold sm:text-3xl">
                 Análise e Desenvolvimento de Sistemas
               </h3>
 
-              <p className="mt-2 text-gray-400">
-                Formação voltada para desenvolvimento de software,
-                programação, banco de dados, engenharia de software
-                e desenvolvimento de sistemas.
+              {/* Instituição */}
+              <p className="mt-2 text-lg font-medium text-gray-300">
+                Centro Universitário Nobre de Feira de Santana — UNIFAN
               </p>
 
+              {/* Período */}
+              <p className="mt-2 text-sm font-medium text-green-400">
+                Conclusão: 2026
+              </p>
+
+              {/* Descrição */}
+              <p className="mt-5 leading-7 text-gray-400">
+                Formação superior voltada para desenvolvimento de software,
+                programação, banco de dados, engenharia de software e
+                desenvolvimento de sistemas.
+              </p>
+
+              {/* Áreas */}
               <div className="mt-6 flex flex-wrap gap-3">
+
                 <span className="rounded-full border border-green-800 bg-green-900/20 px-4 py-2 text-sm text-gray-300">
                   Desenvolvimento Web
                 </span>
@@ -60,6 +80,7 @@ export default function Education() {
                 <span className="rounded-full border border-green-800 bg-green-900/20 px-4 py-2 text-sm text-gray-300">
                   Programação
                 </span>
+
               </div>
 
             </div>
