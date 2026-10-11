@@ -76,7 +76,7 @@ Seja para trocar uma ideia sobre tecnologia, colaborar em projetos ou conversar 
 
 - **E-mail:** [kaykedev42@gmail.com](mailto:kaykedev42@gmail.com)
 - **GitHub:** [github.com/wilsonkayke](https://github.com/wilsonkayke)
-- **LinkedIn:** [Meu perfil profissional](www.linkedin.com/in/kayke-wilson-b18569307)
+- **LinkedIn:** [Meu perfil profissional](https://www.linkedin.com/in/kayke-wilson-b18569307)
 
 ---
 
