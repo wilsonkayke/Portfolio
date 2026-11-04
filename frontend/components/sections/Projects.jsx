@@ -5,14 +5,18 @@ const projects = [
       "Sistema web para gerenciamento de fila de espera e agendamentos para barbearias.",
     technologies: ["Next.js", "React", "Python", "FastAPI", "MongoDB"],
     type: "Sistema Web",
+    link: "https://sistemagerenciamentefila.vercel.app/login",
+    github: "https://github.com/wilsonkayke/FrontBarber90-",
   },
   {
-    title: "LojaDiPaula",
+    title: "Loja de Roupas",
     description:
-      "Site para apresentação e divulgação de produtos de confeitaria, com foco em uma experiência visual moderna.",
-    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-    type: "Website",
-  },
+      "Site de uma loja de roupa com apresentações focadas para obter CTA no WhatsApp, também em desenvolvimento para pagamentos online, página admin com dashboard de faturamento, clicks e etc, também podendo adicionar mais imagens de roupas com descrição",
+    technologies: ["Next.js", "React.js", "Tailwind CSS", "Node.js", "Nest.js", "PostgreSQL"],
+    type: "sistema web",
+    link: "https://loja-roupa-rust.vercel.app/",
+    github: "https://github.com/wilsonkayke/LojaRoupa",
+  }
 ];
 
 export default function Projects() {
@@ -98,14 +102,14 @@ export default function Projects() {
                 <div className="mt-8 flex gap-4">
 
                   <a
-                    href="#"
+                    href={project.link}
                     className="rounded-full bg-green-500 px-5 py-2.5 text-sm font-semibold text-black transition hover:bg-green-400"
                   >
                     Ver projeto
                   </a>
 
                   <a
-                    href="#"
+                    href={project.github}
                     className="rounded-full border border-gray-700 px-5 py-2.5 text-sm font-semibold text-white transition hover:border-green-500 hover:text-green-400"
                   >
                     GitHub
