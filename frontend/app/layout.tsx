@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Kayke Wilson",
   description: "Portfolio pessoal de Kayke Wilson, desenvolvedor web e entusiasta de tecnologia.",
+  icons: {
+    icon: "/assets/icons/icon_kw1.png",
+  }
 };
 
 export default function RootLayout({

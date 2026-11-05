@@ -32,8 +32,8 @@ export default function About() {
 
           <p>
             Ao longo da minha trajetória, venho desenvolvendo projetos práticos
-            utilizando tecnologias como React, Next.js, JavaScript, Python,
-            FastAPI e MongoDB.
+            utilizando tecnologias como React, Next.js, JavaScript, TypeScript, Tailwind CSS, Node.js, Nest.js, FastAPI, Python,
+             PostgreSQL e MongoDB.
           </p>
 
           <p>

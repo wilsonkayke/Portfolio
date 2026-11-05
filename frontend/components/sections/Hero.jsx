@@ -1,4 +1,4 @@
-import fotoFormal from "../../assets/images/foto_formal_portfolio.png";
+import fotoFormal from "../../public/assets/images/foto_formal_portfolio.png";
 import Image from "next/image";
 
 export default function Hero() {
