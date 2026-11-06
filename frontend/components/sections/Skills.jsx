@@ -1,7 +1,7 @@
 const skills = [
   {
     title: "Frontend",
-    description: "Interfaces modernas, responsivas e interativas.",
+    description: "Desenvolvimento de interfaces modernas, responsivas e interativas.",
     technologies: ["React",
     "Next.js",
     "JavaScript",
@@ -12,7 +12,7 @@ const skills = [
   },
   {
     title: "Backend",
-    description: "APIs, regras de negócio e autenticação.",
+    description: "Desenvolvimento de APIs, regras de negócio e sistemas de autenticação.",
     technologies: ["Python",
     "FastAPI",
     "Node.js",
@@ -23,7 +23,7 @@ const skills = [
   },
   {
     title: "Banco de dados",
-    description: "Armazenamento e gerenciamento de dados.",
+    description: "Modelagem, armazenamento e gerenciamento de dados relacionais e não relacionais.",
     technologies: ["MongoDB",
     "PyMongo",
     "PostgreSQL",
@@ -31,7 +31,7 @@ const skills = [
   },
   {
     title: "Ferramentas",
-    description: "Ferramentas utilizadas no desenvolvimento.",
+    description: "Ferramentas de desenvolvimento, versionamento, testes e documentação de APIs.",
     technologies: ["Git",
     "GitHub",
     "VS Code",
