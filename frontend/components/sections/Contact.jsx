@@ -101,6 +101,28 @@ export default function Contact() {
                 </span>
               </a>
 
+              <a
+                href="/Curriculo_kayke_wilson.pdf"
+                download="Curriculo_kayke_wilson.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center justify-between rounded-2xl border border-green-800/60 bg-black/20 p-5 transition duration-300 hover:border-green-500/60 hover:bg-green-900/30"
+              >
+                <div>
+                  <p className="text-sm text-gray-500">
+                    Currículo
+                  </p>
+
+                  <p className="mt-1 font-medium text-white">
+                    Baixar currículo
+                  </p>
+                </div>
+
+                <span className="text-2xl text-green-500 transition group-hover:translate-x-1">
+                  →
+                </span>
+              </a>
+
             </div>
 
           </div>
