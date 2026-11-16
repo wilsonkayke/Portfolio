@@ -84,54 +84,74 @@ const architecture = [
 
 const screenshots = [
   {
-    file: "BarberFlowLogin.png",
-    title: "Login",
-    alt: "Tela de login do BarberFlow",
+    file: "BarberFlowCad.png",
+    title: "Cadastro do cliente",
+    description:
+      "O cliente cria sua conta para acessar a plataforma e começar a utilizar o sistema de agendamentos.",
+    alt: "Tela de cadastro de conta no BarberFlow",
   },
   {
-    file: "BarberFlowCad.png",
-    title: "Cadastro",
-    alt: "Tela de cadastro do BarberFlow",
+    file: "BarberFlowLogin.png",
+    title: "Acesso à plataforma",
+    description:
+      "Com a conta criada, o cliente acessa o sistema pelo formulário de login. A tela também oferece acesso à recuperação de senha.",
+    alt: "Tela de login do BarberFlow com campos de e-mail e senha",
   },
   {
     file: "BarberFlowAgenda.png",
-    title: "Agendamento",
-    alt: "Tela de agendamento do BarberFlow",
+    title: "Agendamento de serviços",
+    description:
+      "O cliente escolhe a data, o serviço, o barbeiro e um dos horários disponíveis para confirmar seu agendamento.",
+    alt: "Formulário de agendamento com seleção de serviço, barbeiro e horários disponíveis",
   },
   {
     file: "BarberFlowFila.png",
     title: "Acompanhamento da fila",
-    alt: "Tela de acompanhamento da fila do BarberFlow",
+    description:
+      "Após agendar, o cliente consulta os detalhes da reserva, sua posição e a quantidade de pessoas à frente. Também pode sair da fila.",
+    alt: "Tela do cliente com detalhes do agendamento e posição na fila",
   },
   {
     file: "BarberFlowRelatorio.png",
-    title: "Relatório do cliente",
-    alt: "Tela de relatório do cliente no BarberFlow",
+    title: "Histórico do cliente",
+    description:
+      "O cliente acompanha seus atendimentos, cancelamentos, total investido no seu visual e frequência de utilização de cada serviço.",
+    alt: "Relatório do cliente com total gasto e histórico de serviços utilizados",
   },
   {
     file: "BarberFlowBarbeiro.png",
-    title: "Área do barbeiro",
-    alt: "Tela da área do barbeiro no BarberFlow",
+    title: "Atendimento pelo barbeiro",
+    description:
+      "O barbeiro consulta os próximos clientes, filtra os agendamentos por data e realiza a chamada pelo próprio painel.",
+    alt: "Painel do barbeiro com lista de espera e botão para chamar o próximo cliente",
   },
   {
     file: "BarberFlowAdmin.png",
-    title: "Painel administrativo",
-    alt: "Tela principal do painel administrativo do BarberFlow",
+    title: "Visão geral da operação",
+    description:
+      "O administrador acompanha a fila, os atendimentos do dia, as desistências e o faturamento, além de consultar serviço, horário e barbeiro de cada agendamento.",
+    alt: "Dashboard administrativo com indicadores do dia e lista de agendamentos",
   },
   {
     file: "BarberFlowAdmin2.png",
-    title: "Painel administrativo — segunda visão",
-    alt: "Segunda captura do painel administrativo do BarberFlow",
+    title: "Consulta de agendamentos por data",
+    description:
+      "Os atalhos de hoje, amanhã e calendário ajudam o administrador a consultar a agenda. A interface também informa quando não há agendamentos pendentes.",
+    alt: "Calendário do painel administrativo aberto e mensagem de ausência de agendamentos pendentes",
   },
   {
     file: "BarberFlowAdminRelatório.png",
-    title: "Relatório administrativo",
-    alt: "Tela de relatório administrativo do BarberFlow",
+    title: "Indicadores administrativos",
+    description:
+      "O relatório reúne faturamento diário, semanal, mensal e acumulado, além de atendimentos finalizados, cancelamentos e filtros por período.",
+    alt: "Relatório administrativo com indicadores financeiros e campos de filtro por data",
   },
   {
     file: "BarberFlowAdminRelatório2.png",
-    title: "Relatório administrativo — segunda visão",
-    alt: "Segunda captura do relatório administrativo do BarberFlow",
+    title: "Histórico de atendimentos da barbearia",
+    description:
+      "O administrador consulta os serviços registrados por data e as quantidades de atendimentos finalizados e cancelados para acompanhar o histórico da operação.",
+    alt: "Tabela de histórico com datas, serviços, finalizações e cancelamentos",
   },
 ];
 
@@ -303,7 +323,7 @@ export default function BarberFlowPage() {
           </div>
 
           <div className="mt-8 grid gap-6 md:grid-cols-2">
-            {screenshots.map(({ file, title, alt }) => {
+            {screenshots.map(({ file, title, description, alt }) => {
               const imagePath = `/assets/images/barberflow/${file}`;
 
               return (
@@ -331,6 +351,10 @@ export default function BarberFlowPage() {
                     <h3 className="text-base font-semibold text-neutral-100">
                       {title}
                     </h3>
+
+                    <p className="mt-2 text-sm leading-7 text-neutral-300">
+                      {description}
+                    </p>
                   </figcaption>
                 </figure>
               );
