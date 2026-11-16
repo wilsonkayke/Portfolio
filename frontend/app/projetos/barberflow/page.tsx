@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const technologies = [
   "Next.js",
@@ -81,6 +82,59 @@ const architecture = [
   },
 ];
 
+const screenshots = [
+  {
+    file: "BarberFlowLogin.png",
+    title: "Login",
+    alt: "Tela de login do BarberFlow",
+  },
+  {
+    file: "BarberFlowCad.png",
+    title: "Cadastro",
+    alt: "Tela de cadastro do BarberFlow",
+  },
+  {
+    file: "BarberFlowAgenda.png",
+    title: "Agendamento",
+    alt: "Tela de agendamento do BarberFlow",
+  },
+  {
+    file: "BarberFlowFila.png",
+    title: "Acompanhamento da fila",
+    alt: "Tela de acompanhamento da fila do BarberFlow",
+  },
+  {
+    file: "BarberFlowRelatorio.png",
+    title: "Relatório do cliente",
+    alt: "Tela de relatório do cliente no BarberFlow",
+  },
+  {
+    file: "BarberFlowBarbeiro.png",
+    title: "Área do barbeiro",
+    alt: "Tela da área do barbeiro no BarberFlow",
+  },
+  {
+    file: "BarberFlowAdmin.png",
+    title: "Painel administrativo",
+    alt: "Tela principal do painel administrativo do BarberFlow",
+  },
+  {
+    file: "BarberFlowAdmin2.png",
+    title: "Painel administrativo — segunda visão",
+    alt: "Segunda captura do painel administrativo do BarberFlow",
+  },
+  {
+    file: "BarberFlowAdminRelatório.png",
+    title: "Relatório administrativo",
+    alt: "Tela de relatório administrativo do BarberFlow",
+  },
+  {
+    file: "BarberFlowAdminRelatório2.png",
+    title: "Relatório administrativo — segunda visão",
+    alt: "Segunda captura do relatório administrativo do BarberFlow",
+  },
+];
+
 export default function BarberFlowPage() {
   return (
     <article className="min-h-screen bg-neutral-950 text-white">
@@ -104,9 +158,9 @@ export default function BarberFlowPage() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-neutral-300">
-              Desenvolvi uma aplicação que conecta o agendamento do cliente
-              à rotina de atendimento da barbearia, com acompanhamento da
-              fila e gerenciamento pelo painel administrativo.
+              Desenvolvi uma aplicação que conecta o agendamento do cliente à
+              rotina de atendimento da barbearia, com acompanhamento da fila e
+              gerenciamento pelo painel administrativo.
             </p>
           </div>
 
@@ -163,16 +217,16 @@ export default function BarberFlowPage() {
 
           <div className="max-w-2xl space-y-5 leading-8 text-neutral-300">
             <p>
-              O projeto partiu da necessidade de organizar agendamentos e
-              tornar a espera mais clara para o cliente. Para a barbearia,
-              era importante reunir a fila e as ações de atendimento em
-              um único lugar.
+              O projeto partiu da necessidade de organizar agendamentos e tornar
+              a espera mais clara para o cliente. Para a barbearia, era
+              importante reunir a fila e as ações de atendimento em um único
+              lugar.
             </p>
 
             <p>
-              Criei o BarberFlow para permitir que o cliente consultasse
-              seu agendamento e acompanhasse sua posição, enquanto a
-              equipe gerenciava as chamadas e a finalização dos atendimentos.
+              Criei o BarberFlow para permitir que o cliente consultasse seu
+              agendamento e acompanhasse sua posição, enquanto a equipe
+              gerenciava as chamadas e a finalização dos atendimentos.
             </p>
           </div>
         </section>
@@ -181,25 +235,21 @@ export default function BarberFlowPage() {
           aria-labelledby="role-title"
           className="grid gap-8 border-b border-neutral-800 py-14 lg:grid-cols-[1fr_2fr] lg:gap-16 lg:py-20"
         >
-          <h2
-            id="role-title"
-            className="text-3xl font-semibold tracking-tight"
-          >
+          <h2 id="role-title" className="text-3xl font-semibold tracking-tight">
             Minha participação
           </h2>
 
           <div className="max-w-2xl space-y-5 leading-8 text-neutral-300">
             <p>
-              Atuei no desenvolvimento das interfaces, na construção da
-              API e na integração com o banco de dados. Também trabalhei
-              na definição das regras de agendamento e no fluxo entre
-              cliente e administrador.
+              Atuei no desenvolvimento das interfaces, na construção da API e na
+              integração com o banco de dados. Também trabalhei na definição das
+              regras de agendamento e no fluxo entre cliente e administrador.
             </p>
 
             <p>
-              O projeto fez parte do meu trabalho de conclusão de curso
-              em Análise e Desenvolvimento de Sistemas e continuou
-              evoluindo com ajustes e novas funcionalidades.
+              O projeto fez parte do meu trabalho de conclusão de curso em
+              Análise e Desenvolvimento de Sistemas e continuou evoluindo com
+              ajustes e novas funcionalidades.
             </p>
           </div>
         </section>
@@ -208,10 +258,7 @@ export default function BarberFlowPage() {
           aria-labelledby="flow-title"
           className="border-b border-neutral-800 py-14 lg:py-20"
         >
-          <h2
-            id="flow-title"
-            className="text-3xl font-semibold tracking-tight"
-          >
+          <h2 id="flow-title" className="text-3xl font-semibold tracking-tight">
             Como funciona
           </h2>
 
@@ -234,6 +281,60 @@ export default function BarberFlowPage() {
                 </ol>
               </div>
             ))}
+          </div>
+        </section>
+
+        <section
+          aria-labelledby="screenshots-title"
+          className="border-b border-neutral-800 py-14 lg:py-20"
+        >
+          <div className="max-w-2xl">
+            <h2
+              id="screenshots-title"
+              className="text-3xl font-semibold tracking-tight"
+            >
+              Conheça as telas
+            </h2>
+
+            <p className="mt-4 leading-7 text-neutral-300">
+              Do agendamento à gestão dos atendimentos. Selecione uma imagem
+              para visualizá-la em tamanho original.
+            </p>
+          </div>
+
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            {screenshots.map(({ file, title, alt }) => {
+              const imagePath = `/assets/images/barberflow/${file}`;
+
+              return (
+                <figure
+                  key={file}
+                  className="overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-900"
+                >
+                  <a
+                    href={imagePath}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Ampliar ${title} (abre em nova aba)`}
+                    className="group relative block aspect-video bg-neutral-950 focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-green-400"
+                  >
+                    <Image
+                      src={imagePath}
+                      alt={alt}
+                      fill
+                      sizes="(min-width: 1280px) 564px, (min-width: 768px) 50vw, 100vw"
+                      className="object-contain transition-opacity group-hover:opacity-85"
+                    />
+                  </a>
+
+                  <figcaption className="border-t border-neutral-800 px-5 py-4">
+                    <h3 className="text-base font-semibold text-neutral-100">
+                      {title}
+                    </h3>
+                  </figcaption>
+                </figure>
+              );
+            })}
           </div>
         </section>
 
@@ -313,9 +414,7 @@ export default function BarberFlowPage() {
 
                 <div className="mt-6 border-t border-neutral-800 pt-5">
                   <h4 className="text-sm font-semibold">O que aprendi</h4>
-                  <p className="mt-2 leading-7 text-neutral-300">
-                    {learning}
-                  </p>
+                  <p className="mt-2 leading-7 text-neutral-300">{learning}</p>
                 </div>
               </section>
             ))}
@@ -335,22 +434,22 @@ export default function BarberFlowPage() {
 
           <div className="max-w-2xl space-y-5 leading-8 text-neutral-300">
             <p>
-              O projeto reúne o fluxo de cadastro, agendamento,
-              acompanhamento da fila e gerenciamento de atendimentos.
-              Durante o desenvolvimento, realizei testes manuais na
-              interface e nas rotas da API.
+              O projeto reúne o fluxo de cadastro, agendamento, acompanhamento
+              da fila e gerenciamento de atendimentos. Durante o
+              desenvolvimento, realizei testes manuais na interface e nas rotas
+              da API.
             </p>
 
             <p>
-              Essa experiência aprofundou minha compreensão sobre a
-              integração entre frontend, backend e banco de dados,
-              principalmente ao investigar falhas e acompanhar uma
-              operação desde a tela até sua persistência.
+              Essa experiência aprofundou minha compreensão sobre a integração
+              entre frontend, backend e banco de dados, principalmente ao
+              investigar falhas e acompanhar uma operação desde a tela até sua
+              persistência.
             </p>
 
             <p>
-              Entre as melhorias planejadas estão notificações
-              automáticas e relatórios mais detalhados sobre os atendimentos.
+              Entre as melhorias planejadas estão notificações automáticas e
+              relatórios mais detalhados sobre os atendimentos.
             </p>
           </div>
         </section>
