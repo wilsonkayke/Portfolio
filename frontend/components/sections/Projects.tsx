@@ -1,3 +1,7 @@
+'use client';
+
+import Link from "next/link";
+
 type Project = {
   title: string;
   description: string;
@@ -13,7 +17,7 @@ const projects: Project[] = [
     description:
       "Sistema de agendamento e fila digital para barbearias. O cliente reserva um horário e acompanha sua posição na fila. No painel administrativo, a equipe chama o próximo cliente e finaliza o atendimento.",
     technologies: ["Next.js", "React", "Tailwind CSS", "Python", "FastAPI", "MongoDB"],
-    demo: "https://sistemagerenciamentefila.vercel.app/login",
+    demo: "/projetos/barberflow",
     github: "https://github.com/wilsonkayke/FrontBarber90-",
   },
   {
