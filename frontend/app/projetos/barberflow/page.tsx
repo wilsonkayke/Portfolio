@@ -83,13 +83,15 @@ const architecture = [
 ];
 
 const screenshots = [
-  {
+   
+  /*
     file: "BarberFlowCad.png",
     title: "Cadastro do cliente",
     description:
       "O cliente cria sua conta para acessar a plataforma e começar a utilizar o sistema de agendamentos.",
     alt: "Tela de cadastro de conta no BarberFlow",
-  },
+    },
+  */
   {
     file: "BarberFlowLogin.png",
     title: "Acesso à plataforma",
